@@ -4,8 +4,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Cocoon\\": "src/Cocoon/",
-            "App\\": "app/"
+            "Cocoon\\": "src/Cocoon/"
         }
     },
     "require-dev": {
