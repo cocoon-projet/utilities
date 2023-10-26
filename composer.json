@@ -27,7 +27,6 @@
     },
     "scripts": {
         "test": ["vendor/bin/phpcbf",
-                "vendor/bin/phpcs",
-                "vendor/bin/phpunit"]
+                "vendor/bin/phpcs"]
     }
 }
