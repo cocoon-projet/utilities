@@ -1,5 +1,4 @@
 <?php
-namespace Utilities;
 
 use Cocoon\Utilities\Strings;
 use PHPUnit\Framework\TestCase;

@@ -19,12 +19,6 @@
             "Cocoon\\": "src/Cocoon/"
         }
     },
-    "autoload-dev": {
-      "psr-4": {
-        "Utilities\\": "tests/",
-        "Cocoon\\": "src/Cocoon/"
-      }
-    },
     "scripts": {
         "test": ["vendor/bin/phpcbf",
                 "vendor/bin/phpcs"]
