@@ -1,4 +1,8 @@
 {
+  "name": "cocoon-projet/utilities",
+  "type": "library",
+  "homepage": "https://github.com/cocoon-projet/dutilities/blob/master/docs/README.md",
+  "license": "MIT",
     "require": {
         "icanboogie/inflector": "^2.2"
     },
