@@ -16,7 +16,7 @@
     "scripts": {
         "test": ["vendor/bin/phpcbf",
                 "vendor/bin/phpcs",
-                "vendor/bin/phpunit --colors --coverage-text"]
+                "vendor/bin/phpunit"]
     },
     "autoload-dev": {
       "psr-4": {
