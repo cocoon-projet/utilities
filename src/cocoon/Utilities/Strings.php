@@ -2,7 +2,6 @@
 
 namespace Cocoon\Utilities;
 
-use Cocoon\Utilities\Strings as UtilitiesStrings;
 use ICanBoogie\Inflector;
 
 /**
