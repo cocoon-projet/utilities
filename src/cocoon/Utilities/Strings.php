@@ -11,6 +11,7 @@ use ICanBoogie\Inflector;
 class Strings
 {
     private static $inflector;
+    public static $lang;
 
     public static function slugify($str, $separator = "-")
     {
@@ -77,9 +78,9 @@ class Strings
         return implode(' ', $result) . $append;
     }
 
-    private static function getInflector()
+    private static function getInflector($lang = 'fr')
     {
-        return self::$inflector = Inflector::get(Inflector::DEFAULT_LOCALE);
+        return self::$inflector = Inflector::get($lang);
     }
 
     public static function plural($string)
@@ -121,7 +122,7 @@ class Strings
     public static function unTableize($string)
     {
         $unTableize = Strings::singular($string);
-        $str = Strings::humanize($unTableize);
-        return self::getInflector()->camelize($unTableize);
+        $str = Strings::camelize($unTableize);
+        return ucwords($str);
     }
 }

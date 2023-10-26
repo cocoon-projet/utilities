@@ -4,15 +4,9 @@ namespace Utilities;
 use Cocoon\Utilities\Strings;
 use PHPUnit\Framework\TestCase;
 
-class StringUtilitiesTest extends TestCase
+class StringsUtilitiesTest extends TestCase
 {
     private $word = 'str cocoon inflector';
-
-
-    public function testStringsIsObeject()
-    {
-        $this->assertIsObject(Strings::class);
-    }
 
     public function testSlugify()
     {
@@ -53,12 +47,12 @@ class StringUtilitiesTest extends TestCase
     public function testSingular()
     {
         $test = Strings::Singular('bouteilles');
-        $this->assertEquals('bouteilles', $test);
+        $this->assertEquals('bouteille', $test);
     }
 
     public function testCamelize()
     {
-        $test = Strings::camelize($this->word);
+        $test = Strings::camelize('str_cocoon_inflector');
         $this->assertEquals('StrCocoonInflector', $test);
     }
 
@@ -82,7 +76,7 @@ class StringUtilitiesTest extends TestCase
 
     public function testUnTableize()
     {
-        $test = Strings::untableize('personne_statuts');
+        $test = Strings::unTableize('personne_statuts');
         $this->assertEquals('PersonneStatut', $test);
     }
 
