@@ -1,0 +1,31 @@
+<?php
+require 'vendor/autoload.php';
+
+use Cocoon\Utilities\Strings;
+$word = 'str cocoon inflector';
+echo 'slugify : ';
+echo Strings::slugify($word) . '<br>';
+echo 'random : ';
+echo Strings::random() . '<br>';
+echo 'token : ';
+echo Strings::token(16) . '<br>';
+echo 'contains : ';
+echo Strings::contains($word, 'i') . '<br>';
+echo 'limit words : ';
+echo Strings::limitWords($word,1) . '<br>';
+echo 'plural : ';
+echo Strings::plural('genou') . '<br>';
+echo 'singular : ';
+echo Strings::singular('bouteilles') . '<br>';
+echo 'camelize : ';
+echo Strings::camelize('str_cocoon_string') . '<br>';
+echo 'humanize : ';
+echo Strings::humanize('employee_salariee') . '<br>';
+echo 'titleize : ';
+echo Strings::titleize('le titre de l\'article du journal') . '<br>';
+echo 'tableize : ';
+echo Strings::tableize('PersonneStatut') . '<br>';
+echo 'untableize : ';
+echo Strings::unTableize(' personne_statuts') . '<br>';
+echo 'underscore : ';
+echo Strings::underscore($word);
